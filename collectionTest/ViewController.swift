@@ -16,6 +16,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         cell.readingLabel.text = readings[indexPath.row]
+        
         cell.layer.cornerRadius = 15
         //Reverse scrolling direction (right to left)
         
